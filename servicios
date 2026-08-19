@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dra. Aura Sandoval — Medicina Estética & Dermocosmética</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Fonts: Playfair Display + Cinzel + Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            cinzel: ['"Cinzel"', 'serif'],
+            sans: ['"Montserrat"', 'sans-serif'],
+          },
+          colors: {
+            medical: {
+              navy: '#0A192F',
+              gold: '#C5A059',
+              goldHover: '#B08C45',
+              softBg: '#F8F9FA',
+              cardBg: '#FFFFFF',
+              darkText: '#1E293B',
+              slateText: '#64748B'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-medical-softBg text-medical-darkText font-sans antialiased selection:bg-medical-gold selection:text-white">
+
+  <!-- Top Bar Médica -->
+  <div class="bg-medical-navy text-white text-[11px] py-2.5 px-6 border-b border-medical-gold/30">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 tracking-widest uppercase font-medium">
+      <div class="flex items-center space-x-6">
+        <span><i class="fas fa-user-md text-medical-gold mr-2"></i> Medicina Estética Facial y Corporal</span>
+        <span class="hidden md:inline"><i class="fas fa-location-dot text-medical-gold mr-2"></i> San Diego, Carabobo</span>
+      </div>
+      <div class="flex items-center space-x-4 text-xs">
+        <p>Lunes a Sábado: 8:00 AM - 6:00 </p>
+        <a href="https://wa.me/1234567890" target="_blank" class="text-medical-gold hover:underline"><i class="fab fa-whatsapp mr-1"></i> Previa Cita </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navbar Principal -->
+  <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="flex flex-col">
+        <span class="text-2xl font-cinzel font-bold text-medical-navy tracking-wider">DRA. AURA SANDOVAL</span>
+        <span class="text-[9px] font-sans tracking-[0.3em] text-medical-gold uppercase -mt-0.5 font-semibold">Medicina Estética & Antiaging</span>
+      </a>
+      
+      <nav class="hidden md:flex space-x-8 text-xs font-semibold uppercase tracking-[0.15em] text-medical-navy">
+        <a href="#inicio" class="hover:text-medical-gold transition">Inicio</a>
+        <a href="#biografia" class="hover:text-medical-gold transition">La Doctora</a>
+        <a href="#promociones" class="hover:text-medical-gold transition">Tratamientos</a>
+        <a href="#galeria" class="hover:text-medical-gold transition">Galería</a>
+        <a href="#contacto" class="hover:text-medical-gold transition">Contacto</a>
+      </nav>
+
+      <a href="#contacto" class="bg-medical-gold text-white px-6 py-2.5 rounded-none text-xs uppercase tracking-widest font-semibold hover:bg-medical-goldHover transition duration-300 shadow-sm border border-medical-gold">
+        Agendar Cita
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section con Carrusel -->
+  <section id="inicio" class="relative bg-medical-navy text-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="relative w-full overflow-hidden">
+        <div id="carousel-slides" class="flex transition-transform duration-700 ease-in-out w-full">
+          
+          <!-- Slide 1 -->
+          <div class="min-w-full relative h-[520px] md:h-[600px]">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1600&q=80" class="w-full h-full object-cover opacity-40" alt="Medicina Estética Facial">
+            <div class="absolute inset-0 bg-gradient-to-r from-medical-navy via-medical-navy/80 to-transparent flex items-center p-8 md:p-16">
+              <div class="max-w-2xl">
+                <span class="text-xs uppercase tracking-[0.3em] text-medical-gold font-semibold block mb-3">Protocolos Médicos Avanzados</span>
+                <h1 class="text-3xl md:text-5xl font-serif leading-tight text-white">Armonización Facial & Rejuvenecimiento</h1>
+                <p class="mt-4 text-sm text-slate-300 font-light leading-relaxed max-w-lg">Procedimientos médicos no invasivos enfocados en restaurar la frescura y simetría natural del rostro con máxima seguridad.</p>
+                <div class="mt-8">
+                  <a href="#contacto" class="bg-medical-gold text-white px-8 py-3.5 text-xs font-semibold tracking-widest uppercase hover:bg-medical-goldHover transition">Consulta Médica</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="min-w-full relative h-[520px] md:h-[600px]">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1600&q=80" class="w-full h-full object-cover opacity-40" alt="Bienestar Estético">
+            <div class="absolute inset-0 bg-gradient-to-r from-medical-navy via-medical-navy/80 to-transparent flex items-center p-8 md:p-16">
+              <div class="max-w-2xl">
+                <span class="text-xs uppercase tracking-[0.3em] text-medical-gold font-semibold block mb-3">Tecnología Dermocosmética</span>
+                <h2 class="text-3xl md:text-5xl font-serif leading-tight text-white">Tratamientos Corporales de Alta Definición</h2>
+                <p class="mt-4 text-sm text-slate-300 font-light leading-relaxed max-w-lg">Aparatología de grado médico diseñada para la tonificación, moldeado y mejora de la calidad cutánea.</p>
+                <div class="mt-8">
+                  <a href="#promociones" class="bg-medical-gold text-white px-8 py-3.5 text-xs font-semibold tracking-widest uppercase hover:bg-medical-goldHover transition">Ver Protocolos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="min-w-full relative h-[520px] md:h-[600px]">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1600&q=80" class="w-full h-full object-cover opacity-40" alt="Consulta Profesional">
+            <div class="absolute inset-0 bg-gradient-to-r from-medical-navy via-medical-navy/80 to-transparent flex items-center p-8 md:p-16">
+              <div class="max-w-2xl">
+                <span class="text-xs uppercase tracking-[0.3em] text-medical-gold font-semibold block mb-3">Atención Exclusiva</span>
+                <h2 class="text-3xl md:text-5xl font-serif leading-tight text-white">Evaluación Personalizada e Integral</h2>
+                <p class="mt-4 text-sm text-slate-300 font-light leading-relaxed max-w-lg">Un diagnóstico preciso para establecer el plan de tratamiento idóneo acorde a la anatomía de cada paciente.</p>
+                <div class="mt-8">
+                  <a href="#contacto" class="bg-medical-gold text-white px-8 py-3.5 text-xs font-semibold tracking-widest uppercase hover:bg-medical-goldHover transition">Agendar Evaluación</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Botones Carrusel -->
+        <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 border border-white/20 bg-medical-navy/60 text-white w-12 h-12 flex items-center justify-center hover:bg-medical-gold transition">
+          <i class="fas fa-chevron-left text-sm"></i>
+        </button>
+        <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 border border-white/20 bg-medical-navy/60 text-white w-12 h-12 flex items-center justify-center hover:bg-medical-gold transition">
+          <i class="fas fa-chevron-right text-sm"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN BIOGRAFÍA DE LA DOCTORA (NUEVA) -->
+  <section id="biografia" class="py-20 px-6 bg-white border-b border-slate-100">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+      
+      <!-- Foto Ilustrativa de la Doctora -->
+      <div class="md:col-span-5 relative">
+        <div class="relative z-10 border-2 border-medical-gold p-2 bg-white shadow-xl">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80" alt="Dra. Aura Sandoval" class="w-full h-[450px] object-cover">
+        </div>
+        <!-- Cuadro decorativo de fondo -->
+        <div class="absolute -bottom-4 -right-4 w-full h-full bg-medical-navy z-0 hidden sm:block"></div>
+      </div>
+
+      <!-- Texto Biográfico y Trayectoria -->
+      <div class="md:col-span-7">
+        <span class="text-xs font-semibold uppercase tracking-[0.25em] text-medical-gold">Directora Médica</span>
+        <h2 class="text-3xl md:text-4xl font-serif text-medical-navy mt-1">Dra. Aura Sandoval</h2>
+        <p class="text-xs font-semibold text-slate-400 uppercase tracking-widest mt-1">Especialista en Medicina Estética & Antiaging</p>
+        
+        <div class="w-16 h-[2px] bg-medical-gold my-6"></div>
+
+        <p class="text-medical-slateText text-sm leading-relaxed mb-4">
+          Con más de 10 años de experiencia en la atención estética integral, la Dra. Aura Sandoval se ha consolidado como un referente en la aplicación de técnicas avanzadas de armonización facial, rejuvenecimiento cutáneo y aparatología de última generación.
+        </p>
+        <p class="text-medical-slateText text-sm leading-relaxed mb-6">
+          Su enfoque profesional combina la rigurosidad científica con un agudo sentido artístico, garantizando resultados armónicos, naturales e indoloros adaptados a las expectativas clínicas de cada paciente.
+        </p>
+
+        <!-- Acreditaciones / Logros -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 border-t border-slate-100 pt-6 text-xs text-medical-navy font-semibold">
+          <div class="flex items-center space-x-3">
+            <i class="fas fa-graduation-cap text-medical-gold text-base"></i>
+            <span>Médico Cirujano (UC)</span>
+          </div>
+          <div class="flex items-center space-x-3">
+            <i class="fas fa-certificate text-medical-gold text-base"></i>
+            <span>Máster en Medicina Estética</span>
+          </div>
+          <div class="flex items-center space-x-3">
+            <i class="fas fa-award text-medical-gold text-base"></i>
+            <span>Certificación Antiaging Internacional</span>
+          </div>
+          <div class="flex items-center space-x-3">
+            <i class="fas fa-user-shield text-medical-gold text-base"></i>
+            <span>Miembro de la Sociedad de Dermocosmética</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+ <!-- Sección Breve: Filosofía / Marca Personal -->
+  <section id="nosotros" class="py-20 px-6 bg-white">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="text-xs font-semibold uppercase tracking-[0.25em] text-medical-gold">Medicina de Precisión</span>
+        <h2 class="text-3xl md:text-4xl font-serif text-medical-navy mt-2 leading-tight">Filosofía de Trabajo Médica</h2>
+        <div class="w-16 h-[2px] bg-medical-gold my-6"></div>
+        <p class="text-medical-slateText text-sm leading-relaxed mb-4">
+          La medicina estética moderna debe enfocarse en realzar los rasgos naturales sin alterar la esencia del paciente. 
+        </p>
+        <p class="text-medical-slateText text-sm leading-relaxed">
+          Cada protocolo es ejecutado bajo estrictas normas sanitarias, empleando productos con certificación internacional y tecnología médica comprobada.
+        </p>
+      </div>
+      <div class="bg-medical-softBg p-8 border-l-4 border-medical-gold">
+        <h3 class="text-xl font-serif text-medical-navy mb-3">Compromiso con el Paciente</h3>
+        <ul class="space-y-3 text-xs text-medical-slateText font-medium">
+          <li class="flex items-center"><i class="fas fa-check text-medical-gold mr-3"></i> Diagnóstico facial y corporal personalizado</li>
+          <li class="flex items-center"><i class="fas fa-check text-medical-gold mr-3"></i> Productos biocompatibles de alta gama</li>
+          <li class="flex items-center"><i class="fas fa-check text-medical-gold mr-3"></i> Seguimiento médico post-procedimiento</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Tratamientos / Promociones Médicas -->
+  <section id="promociones" class="py-20 px-6 bg-medical-softBg border-t border-slate-200/60">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-[0.3em] font-semibold text-medical-gold">Opciones Destacadas</span>
+        <h2 class="text-3xl md:text-4xl font-serif text-medical-navy mt-2">Protocolos & Especialidades</h2>
+        <div class="w-12 h-[2px] bg-medical-gold mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Tarjeta 1 -->
+        <div class="bg-white border border-slate-200 hover:border-medical-gold transition duration-300 shadow-sm flex flex-col justify-between">
+          <div class="p-8">
+            <span class="text-[10px] font-semibold tracking-widest uppercase bg-medical-navy text-white px-3 py-1">Protocolo Facial</span>
+            <h3 class="text-2xl font-serif text-medical-navy mt-6">Glow Facial Express</h3>
+            <p class="text-medical-slateText text-xs leading-relaxed mt-3">Higiene médica profunda con punta de diamante, velo de colágeno y fototerapia LED estimulante.</p>
+          </div>
+          <div class="p-8 pt-0 border-t border-slate-100 flex items-center justify-between mt-6">
+            <div>
+              <span class="text-xs text-slate-400 line-through">$60</span>
+              <p class="text-3xl font-serif text-medical-gold font-bold">$35</p>
+            </div>
+            <a href="#contacto" class="text-xs uppercase tracking-widest font-semibold text-medical-navy hover:text-medical-gold transition">Agendar</a>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="bg-white border-2 border-medical-gold shadow-md flex flex-col justify-between relative">
+          <div class="bg-medical-gold text-white text-[10px] uppercase tracking-[0.2em] font-semibold text-center py-1.5">Más Solicitado</div>
+          <div class="p-8">
+            <span class="text-[10px] font-semibold tracking-widest uppercase bg-medical-navy text-white px-3 py-1">Corporal & Spa</span>
+            <h3 class="text-2xl font-serif text-medical-navy mt-6">Ritual Relax & Detox</h3>
+            <p class="text-medical-slateText text-xs leading-relaxed mt-3">Masaje de tejido profundo de 50 min con aceites esenciales botánicos y termoterapia con piedras cálidas.</p>
+          </div>
+          <div class="p-8 pt-0 border-t border-slate-100 flex items-center justify-between mt-6">
+            <div>
+              <span class="text-xs text-slate-400 line-through">$85</span>
+              <p class="text-3xl font-serif text-medical-gold font-bold">$59</p>
+            </div>
+            <a href="#contacto" class="text-xs uppercase tracking-widest font-semibold text-medical-navy hover:text-medical-gold transition">Agendar</a>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="bg-white border border-slate-200 hover:border-medical-gold transition duration-300 shadow-sm flex flex-col justify-between">
+          <div class="p-8">
+            <span class="text-[10px] font-semibold tracking-widest uppercase bg-medical-navy text-white px-3 py-1">Aparatología</span>
+            <h3 class="text-2xl font-serif text-medical-navy mt-6">Sculpt & Contour</h3>
+            <p class="text-medical-slateText text-xs leading-relaxed mt-3">2 sesiones de cavitación de alta frecuencia combinada con maderoterapia focalizada remodelante.</p>
+          </div>
+          <div class="p-8 pt-0 border-t border-slate-100 flex items-center justify-between mt-6">
+            <div>
+              <span class="text-xs text-slate-400 line-through">$110</span>
+              <p class="text-3xl font-serif text-medical-gold font-bold">$75</p>
+            </div>
+            <a href="#contacto" class="text-xs uppercase tracking-widest font-semibold text-medical-navy hover:text-medical-gold transition">Agendar</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Mosaico de 6 Fotos -->
+  <section id="galeria" class="py-20 px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-[0.3em] font-semibold text-medical-gold">Instalaciones & Resultados</span>
+        <h2 class="text-3xl md:text-4xl font-serif text-medical-navy mt-2">Galería Clínica</h2>
+        <div class="w-12 h-[2px] bg-medical-gold mx-auto mt-4"></div>
+      </div>
+
+      <!-- Cuadrícula Mosaico de 6 fotos -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        
+        <!-- Foto 1 -->
+        <div class="relative group overflow-hidden bg-medical-navy h-72 border border-slate-200">
+          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Consultorio Médico" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
+          <div class="absolute inset-0 bg-gradient-to-t from-medical-navy/80 via-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+            <span class="text-xs uppercase tracking-widest text-white font-medium">Consultorio & Diagnóstico</span>
+          </div>
+        </div>
+
+        <!-- Foto 2 -->
+        <div class="relative group overflow-hidden bg-medical-navy h-72 border border-slate-200">
+          <img src="https://images.unsplash.com/photo-1512290900673-70024fe74920?auto=format&fit=crop&w=800&q=80" alt="Tratamiento Facial" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
+          <div class="absolute inset-0 bg-gradient-to-t from-medical-navy/80 via-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+            <span class="text-xs uppercase tracking-widest text-white font-medium">Limpieza Facial Dermocosmética</span>
+          </div>
+        </div>
+
+        <!-- Foto 3 -->
+        <div class="relative group overflow-hidden bg-medical-navy h-72 border border-slate-200">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Cabina Spa" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
+          <div class="absolute inset-0 bg-gradient-to-t from-medical-navy/80 via-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+            <span class="text-xs uppercase tracking-widest text-white font-medium">Cabina de Relax & Corporal</span>
+          </div>
+        </div>
+
+        <!-- Foto 4 -->
+        <div class="relative group overflow-hidden bg-medical-navy h-72 border border-slate-200">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80" alt="Armonización Facial" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
+          <div class="absolute inset-0 bg-gradient-to-t from-medical-navy/80 via-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+            <span class="text-xs uppercase tracking-widest text-white font-medium">Procedimientos Antiaging</span>
+          </div>
+        </div>
+
+        <!-- Foto 5 -->
+        <div class="relative group overflow-hidden bg-medical-navy h-72 border border-slate-200">
+          <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80" alt="Masaje Terapéutico" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
+          <div class="absolute inset-0 bg-gradient-to-t from-medical-navy/80 via-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+            <span class="text-xs uppercase tracking-widest text-white font-medium">Terapias Corporales</span>
+          </div>
+        </div>
+
+        <!-- Foto 6 -->
+        <div class="relative group overflow-hidden bg-medical-navy h-72 border border-slate-200">
+          <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=800&q=80" alt="Aparatología Médica" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
+          <div class="absolute inset-0 bg-gradient-to-t from-medical-navy/80 via-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+            <span class="text-xs uppercase tracking-widest text-white font-medium">Tecnología & Aparatología</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulario de Consulta Médica -->
+  <section id="contacto" class="py-20 px-6 bg-medical-softBg border-t border-slate-200/60">
+    <div class="max-w-4xl mx-auto bg-white p-8 md:p-14 border border-slate-200 shadow-sm">
+      <div class="text-center max-w-lg mx-auto mb-10">
+        <span class="text-xs uppercase tracking-[0.25em] font-semibold text-medical-gold">Atención Personalizada</span>
+        <h2 class="text-3xl font-serif text-medical-navy mt-2">Reserva tu Cita Médica</h2>
+        <p class="text-medical-slateText text-xs mt-2">Selecciona la opción de tu interés y nos comunicaremos para confirmar tu horario.</p>
+      </div>
+
+      <form class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-[11px] uppercase tracking-widest text-medical-navy font-semibold mb-2">Nombre y Apellido</label>
+            <input type="text" placeholder="Ej. Ana Mendoza" required class="w-full bg-white border border-slate-300 rounded-none px-4 py-3 text-xs text-medical-darkText placeholder-slate-400 focus:outline-none focus:border-medical-gold transition">
+          </div>
+          <div>
+            <label class="block text-[11px] uppercase tracking-widest text-medical-navy font-semibold mb-2">Teléfono de Contacto</label>
+            <input type="tel" placeholder="+58 412 0000000" required class="w-full bg-white border border-slate-300 rounded-none px-4 py-3 text-xs text-medical-darkText placeholder-slate-400 focus:outline-none focus:border-medical-gold transition">
+          </div>
+        </div>
+        <div>
+          <label class="block text-[11px] uppercase tracking-widest text-medical-navy font-semibold mb-2">Correo Electrónico</label>
+          <input type="email" placeholder="correo@ejemplo.com" required class="w-full bg-white border border-slate-300 rounded-none px-4 py-3 text-xs text-medical-darkText placeholder-slate-400 focus:outline-none focus:border-medical-gold transition">
+        </div>
+        <div>
+          <label class="block text-[11px] uppercase tracking-widest text-medical-navy font-semibold mb-2">Tratamiento de Interés</label>
+          <select class="w-full bg-white border border-slate-300 rounded-none px-4 py-3 text-xs text-medical-darkText focus:outline-none focus:border-medical-gold transition">
+            <option>Promoción Glow Facial Express ($35)</option>
+            <option>Promoción Ritual Relax & Detox ($59)</option>
+            <option>Promoción Sculpt & Contour ($75)</option>
+            <option>Consulta Médica General / Diagnóstico</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-[11px] uppercase tracking-widest text-medical-navy font-semibold mb-2">Mensaje o Consulta</label>
+          <textarea rows="3" placeholder="Escribe tus dudas sobre los procedimientos..." class="w-full bg-white border border-slate-300 rounded-none px-4 py-3 text-xs text-medical-darkText placeholder-slate-400 focus:outline-none focus:border-medical-gold transition"></textarea>
+        </div>
+        <button type="submit" class="w-full py-4 bg-medical-navy text-white text-xs uppercase tracking-[0.2em] font-semibold hover:bg-medical-gold transition duration-300">
+          Solicitar Evaluación
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Institucional -->
+  <footer class="bg-medical-navy text-white py-16 px-6 border-t border-medical-gold/30">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+      <div>
+        <h3 class="text-2xl font-cinzel font-bold text-white tracking-wider">DRA. AURA SANDOVAL</h3>
+        <p class="text-medical-gold text-[10px] uppercase tracking-[0.25em] mt-1">Medicina Estética & Antiaging</p>
+        <p class="text-slate-400 text-xs mt-4 leading-relaxed max-w-xs">Atención médica profesional dedicada a la salud, armonización y rejuvenecimiento cutáneo.</p>
+      </div>
+
+      <div>
+        <h4 class="text-xs uppercase tracking-[0.2em] text-medical-gold mb-4 font-semibold">Redes Sociales</h4>
+        <div class="flex justify-center md:justify-start space-x-6 text-xl text-slate-300">
+          <a href="#" class="hover:text-medical-gold transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="hover:text-medical-gold transition" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="hover:text-medical-gold transition" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-xs uppercase tracking-[0.2em] text-medical-gold mb-4 font-semibold">Consultorio</h4>
+        <p class="text-slate-300 text-xs leading-relaxed">C.C. San Diego, Nivel Consultorios Médicos.</p>
+        <p class="text-slate-300 text-xs leading-relaxed mt-1">Carabobo, Venezuela</p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto border-t border-slate-800 mt-12 pt-8 text-center text-slate-500 text-[11px]">
+      &copy; 2026 Dra. Aura Sandoval. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/1234567890?text=Hola,%20deseo%20agendar%20una%20consulta%20médica" 
+     target="_blank" 
+     class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center text-2xl shadow-xl hover:scale-105 transition duration-300"
+     aria-label="Contacto directo por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Script del Carrusel -->
+  <script>
+    let currentSlide = 0;
+    const slides = document.getElementById('carousel-slides');
+    const totalSlides = 3;
+
+    function updateCarousel() {
+      slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateCarousel();
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      updateCarousel();
+    }
+
+    setInterval(nextSlide, 5000);
+  </script>
+
+</body>
+</html>
